@@ -1,0 +1,21 @@
+<h3>Add New Item</h3>
+{{#if msg}}
+<div class="alert">{{msg}}</div>
+{{/if}}
+
+<form method="post" action="/additem">
+<div class="form-group">
+    <label for="name">NAME1</label>
+    <input type="text" name="name">
+</div>
+<div class="form-group">
+    <label for="description">DESCRIPTION1</label>
+    <input type="text" name="description">
+</div>
+
+<div class="form-group">
+    <button type="submit">Save</button>
+    <a href="/">view all</a>
+</div>
+
+</form>
